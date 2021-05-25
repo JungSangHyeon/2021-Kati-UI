@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".katiDomain.main.view.MainActivity">
+    android:background="@color/kati_light_gray"
+    tools:context=".katiDomain.main.PasswordEditActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
@@ -17,18 +18,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:defaultNavHost="true"
-        app:navGraph="@navigation/main_graph" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/mainFragment_bottomNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:labelVisibilityMode="labeled"
-        app:itemTextColor="@color/kati_dark_gray"
-        app:itemIconTint="@color/bottom_nav_color"
-        app:menu="@menu/bottom_navigation_main"
-        >
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:navGraph="@navigation/sign_up_graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
