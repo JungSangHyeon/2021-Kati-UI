@@ -14,7 +14,7 @@
         android:background="@color/white"
         app:button_image="@drawable/jsh_before"
         android:elevation="5dp"
-        app:title="<제품 이름>" />
+        app:title="제품 이름" />
 
     <TextView
         android:id="@+id/textView17"

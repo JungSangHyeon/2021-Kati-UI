@@ -23,6 +23,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/favorite_toolbar"
         tools:itemCount="3"
-        tools:listitem="@layout/item_review" />
+        tools:listitem="@layout/item_review_see_at_mykati" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

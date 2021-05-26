@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/kati_light_gray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".kati.main.myKati.review.ReviewFlagment">
+    tools:context=".kati.main.myKati.review.ReviewManagementFragment">
 
     <com.example.katiui.jshCrossDomain.JSHToolBar
         android:id="@+id/review_toolbar"
@@ -23,6 +23,6 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/review_toolbar"
-        tools:listitem="@layout/item_review"
+        tools:listitem="@layout/item_review_see_at_mykati"
         tools:itemCount="3"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

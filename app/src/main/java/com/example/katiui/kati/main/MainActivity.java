@@ -1,5 +1,6 @@
 package com.example.katiui.kati.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.katiui.R;
+import com.example.katiui.kati.foodDetail.FoodDetailActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+
+        this.startActivity(new Intent(this, FoodDetailActivity.class));
     }
 
 
