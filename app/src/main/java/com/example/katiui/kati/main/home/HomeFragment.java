@@ -1,4 +1,4 @@
-package com.example.katiui.katiDomain.main.view;
+package com.example.katiui.kati.main.home;
 
 import android.os.Bundle;
 
@@ -13,15 +13,15 @@ import android.view.ViewGroup;
 
 import com.example.katiui.R;
 import com.example.katiui.jshCrossDomain.JSHViewPagerTool;
-import com.example.katiui.katiDomain.main.view.advertisement.AdvertisementViewPagerAdapter;
+import com.example.katiui.kati.main.home.advertisement.AdvertisementViewPagerAdapter;
 
 import org.jetbrains.annotations.NotNull;
 
-public class MainFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override

@@ -3,38 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.katiui.katiDomain.main.view.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:id="@+id/homeFragment"
+        android:name="com.example.katiui.kati.main.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_mainFragment_to_myKatiFragment"
+            android:id="@+id/action_homeFragment_to_myKatiFragment"
             app:destination="@id/myKatiFragment" />
     </fragment>
     <fragment
         android:id="@+id/myKatiFragment"
-        android:name="com.example.katiui.katiDomain.main.view.MyKatiFragment"
+        android:name="com.example.katiui.kati.main.myKati.MyKatiFragment"
         android:label="MyKatiFragment"
         tools:layout="@layout/fragment_mykati">
         <action
             android:id="@+id/action_myKatiFragment_to_myInfoEditFragment"
             app:destination="@id/myInfoEditFragment" />
         <action
-            android:id="@+id/action_myKatiFragment_to_findPasswordFragment"
-            app:destination="@id/findPasswordFragment" />
+            android:id="@+id/action_myKatiFragment_to_reviewFlagment"
+            app:destination="@id/reviewFlagment" />
     </fragment>
-    <action android:id="@+id/action_global_mainFragment" app:destination="@id/mainFragment" />
+    <action android:id="@+id/action_global_mainFragment" app:destination="@id/homeFragment" />
     <fragment
         android:id="@+id/myInfoEditFragment"
-        android:name="com.example.katiui.katiDomain.main.view.MyInfoEditFragment"
+        android:name="com.example.katiui.kati.main.myKati.myInfoEdit.MyInfoEditFragment"
         android:label="fragment_my_info_edit"
         tools:layout="@layout/fragment_my_info_edit" />
     <fragment
-        android:id="@+id/findPasswordFragment"
-        android:name="com.example.katiui.katiDomain.main.FindPasswordFragment"
-        android:label="FindPasswordFragment"
-        tools:layout="@layout/fragment_find_password"/>
+        android:id="@+id/reviewFlagment"
+        android:name="com.example.katiui.kati.main.myKati.review.ReviewFlagment"
+        android:label="fragment_review_flagment"
+        tools:layout="@layout/fragment_review_flagment" />
 </navigation>

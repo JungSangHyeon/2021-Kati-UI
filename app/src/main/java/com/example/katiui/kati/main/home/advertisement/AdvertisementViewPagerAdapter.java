@@ -1,4 +1,4 @@
-package com.example.katiui.katiDomain.main.view.advertisement;
+package com.example.katiui.kati.main.home.advertisement;
 
 import android.view.LayoutInflater;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.example.katiui.katiDomain.main.view;
+package com.example.katiui.kati.main.myKati;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,8 +14,8 @@ import androidx.navigation.Navigation;
 
 import com.example.katiui.R;
 import com.example.katiui.jshCrossDomain.JSHSelectItem;
-import com.example.katiui.katiDomain.main.PasswordEditActivity;
-import com.example.katiui.katiDomain.main.SignUpActivity;
+import com.example.katiui.kati.login.LoginActivity;
+import com.example.katiui.kati.signUp.SignUpActivity;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -35,10 +35,15 @@ public class MyKatiFragment extends Fragment {
                 v-> Navigation.findNavController(view).navigate(R.id.action_myKatiFragment_to_myInfoEditFragment)
         );
 
+        JSHSelectItem reviewSelect = view.findViewById(R.id.select_my_review);
+        reviewSelect.setOnClickListener(
+                v-> Navigation.findNavController(view).navigate(R.id.action_myKatiFragment_to_reviewFlagment)
+        );
+
         Button signUp = view.findViewById(R.id.mykati_signUp_button);
         signUp.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), SignUpActivity.class)));
 
         Button login = view.findViewById(R.id.mykati_login_button);
-        login.setOnClickListener(v-> Navigation.findNavController(view).navigate(R.id.action_myKatiFragment_to_findPasswordFragment));
+        login.setOnClickListener(v-> this.getActivity().startActivity(new Intent(this.getContext(), LoginActivity.class)));
     }
 }

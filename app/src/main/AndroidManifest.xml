@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KatiUI">
-        <activity android:name=".katiDomain.main.SignOutActivity"></activity>
+        <activity android:name=".kati.idFind.IdFindActivity"></activity>
+        <activity android:name=".kati.nameEdit.NameEditActivity" />
+        <activity android:name=".kati.passwordFind.PasswordFindActivity" />
+        <activity android:name=".kati.login.LoginActivity" />
+        <activity android:name=".kati.signOut.SignOutActivity" />
         <activity
-            android:name=".katiDomain.main.PasswordEditActivity"
+            android:name=".kati.passwordEdit.PasswordEditActivity"
             android:label="@string/title_activity_password_edit"
             android:theme="@style/Theme.KatiUI.NoActionBar" />
         <activity
-            android:name=".katiDomain.main.SignUpActivity"
+            android:name=".kati.signUp.SignUpActivity"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/Theme.KatiUI.NoActionBar" />
-        <activity android:name=".katiDomain.main.view.MainActivity">
+        <activity android:name=".kati.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/kati_light_gray"
-    tools:context=".katiDomain.main.PasswordEditActivity">
+    tools:context=".kati.signUp.SignUpActivity">
 
     <com.example.katiui.jshCrossDomain.JSHToolBar
-        android:id="@+id/main_toolbar"
+        android:id="@+id/home_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:button_image="@drawable/ic_baseline_navigate_before_24"
-        app:title="비밀번호 찾기"
+        app:button_image="@drawable/jsh_before"
+        app:title="닉네임 변경"
         android:background="@color/white"
         android:elevation="5dp"/>
 
@@ -21,18 +21,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/home_toolbar"
         tools:layout_editor_absoluteX="-86dp">
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/edittext_bg"
             android:ems="10"
-            android:hint="이메일"
-            android:layout_marginTop="24dp"
+            android:hint="닉네임 입력 (10자 이내)"
+            android:layout_marginTop="16dp"
             android:padding="8dp"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,25 +45,13 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/white"
-            android:text="이메일 발송 하기"
+            android:backgroundTint="@color/kati_red"
             android:layout_marginTop="16dp"
-            android:textColor="@color/black"
+            android:text="닉네임 변경"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="입력하신 이메일 주소로 비밀번호 재설정 메일이 발송됩니다."
-            android:layout_marginHorizontal="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

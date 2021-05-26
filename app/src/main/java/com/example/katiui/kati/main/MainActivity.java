@@ -1,26 +1,13 @@
-package com.example.katiui.katiDomain.main.view;
+package com.example.katiui.kati.main;
 
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.GridLayout;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.katiui.R;
-import com.example.katiui.jshCrossDomain.JSHViewPagerTool;
-import com.example.katiui.katiDomain.main.view.advertisement.AdvertisementViewPagerAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.action_favorite: break;
                 case R.id.action_search: break;
                 case R.id.action_find_market: break;
-                case R.id.action_mykati: navController.navigate(R.id.action_mainFragment_to_myKatiFragment); break;
+                case R.id.action_mykati: navController.navigate(R.id.action_homeFragment_to_myKatiFragment); break;
             }
             return true;
         });
