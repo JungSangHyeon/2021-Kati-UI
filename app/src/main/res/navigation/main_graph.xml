@@ -9,11 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="com.example.katiui.kati.main.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_myKatiFragment"
-            app:destination="@id/myKatiFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/myKatiFragment"
         android:name="com.example.katiui.kati.main.myKati.MyKatiFragment"
@@ -25,6 +21,9 @@
         <action
             android:id="@+id/action_myKatiFragment_to_reviewFlagment"
             app:destination="@id/reviewFlagment" />
+        <action
+            android:id="@+id/action_myKatiFragment_to_allergyFragment"
+            app:destination="@id/allergyFragment" />
     </fragment>
     <action android:id="@+id/action_global_mainFragment" app:destination="@id/homeFragment" />
     <fragment
@@ -37,4 +36,14 @@
         android:name="com.example.katiui.kati.main.myKati.review.ReviewFlagment"
         android:label="fragment_review_flagment"
         tools:layout="@layout/fragment_review_flagment" />
+    <fragment
+        android:id="@+id/allergyFragment"
+        android:name="com.example.katiui.kati.main.myKati.allergy.AllergyFragment"
+        android:label="fragment_allergy"
+        tools:layout="@layout/fragment_allergy" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.katiui.kati.main.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" /><action android:id="@+id/action_global_myKatiFragment" app:destination="@id/myKatiFragment"/><action android:id="@+id/action_global_favoriteFragment" app:destination="@id/favoriteFragment"/>
 </navigation>

@@ -5,24 +5,24 @@
     android:layout_height="match_parent"
     android:background="@color/kati_light_gray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".kati.main.myKati.review.ReviewFlagment">
+    tools:context=".kati.main.favorite.FavoriteFragment">
 
     <com.example.katiui.jshCrossDomain.JSHToolBar
-        android:id="@+id/review_toolbar"
+        android:id="@+id/favorite_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="리뷰 관리"
-        app:button_image="@drawable/jsh_before"
         android:background="@color/white"
-        android:elevation="5dp"/>
+        android:elevation="5dp"
+        app:title="찜" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/review_list"
+        android:id="@+id/favorite_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/review_toolbar"
-        tools:listitem="@layout/item_review"
-        tools:itemCount="3"/>
+        app:layout_constraintTop_toBottomOf="@+id/favorite_toolbar"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_review" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -77,12 +77,21 @@
         />
 
     <com.example.katiui.jshCrossDomain.JSHSelectItem
+        android:id="@+id/select_my_allergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:JSHSelectItem_title="알레르기 관리"
+        app:layout_constraintTop_toBottomOf="@+id/select_my_info_edit"
+        />
+
+    <com.example.katiui.jshCrossDomain.JSHSelectItem
         android:id="@+id/select_my_review"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         app:JSHSelectItem_title="리뷰 관리"
-        app:layout_constraintTop_toBottomOf="@+id/select_my_info_edit"
+        app:layout_constraintTop_toBottomOf="@+id/select_my_allergy"
         />
 
     <com.example.katiui.jshCrossDomain.JSHSelectItem

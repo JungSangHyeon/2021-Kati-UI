@@ -14,8 +14,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.katiui.R;
-import com.example.katiui.kati.nameEdit.NameEditActivity;
-import com.example.katiui.kati.passwordEdit.PasswordEditActivity;
+import com.example.katiui.kati.editName.EditNameActivity;
+import com.example.katiui.kati.editPassword.EditPasswordActivity;
+import com.example.katiui.kati.setRestoreEmail.SetRestoreEmailActivity;
 import com.example.katiui.kati.signOut.SignOutActivity;
 
 import org.jetbrains.annotations.NotNull;
@@ -31,10 +32,13 @@ public class MyInfoEditFragment extends Fragment {
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Button editPW = view.findViewById(R.id.myInfoEditFragment_editPW);
-        editPW.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), PasswordEditActivity.class)));
+        editPW.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), EditPasswordActivity.class)));
 
         Button editName = view.findViewById(R.id.myInfoEditFragment_editName);
-        editName.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), NameEditActivity.class)));
+        editName.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), EditNameActivity.class)));
+
+        Button editRestoreEmail = view.findViewById(R.id.myInfoEditFragment_editRestoreEmail);
+        editRestoreEmail.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), SetRestoreEmailActivity.class)));
 
         TextView signOut = view.findViewById(R.id.myinfo_signOut_textView);
         signOut.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), SignOutActivity.class)));

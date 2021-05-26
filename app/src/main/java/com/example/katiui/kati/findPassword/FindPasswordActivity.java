@@ -1,4 +1,4 @@
-package com.example.katiui.kati.passwordFind;
+package com.example.katiui.kati.findPassword;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.katiui.R;
 
-public class PasswordFindActivity extends AppCompatActivity {
+public class FindPasswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

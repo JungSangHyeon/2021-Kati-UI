@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
             NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
             switch(item.getItemId()){
                 case R.id.action_home: navController.navigate(R.id.action_global_mainFragment); break;
-                case R.id.action_favorite: break;
+                case R.id.action_favorite: navController.navigate(R.id.action_global_favoriteFragment); break;
                 case R.id.action_search: break;
                 case R.id.action_find_market: break;
-                case R.id.action_mykati: navController.navigate(R.id.action_homeFragment_to_myKatiFragment); break;
+                case R.id.action_mykati: navController.navigate(R.id.action_global_myKatiFragment); break;
             }
             return true;
         });

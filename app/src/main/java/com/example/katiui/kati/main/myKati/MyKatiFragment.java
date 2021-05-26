@@ -40,6 +40,11 @@ public class MyKatiFragment extends Fragment {
                 v-> Navigation.findNavController(view).navigate(R.id.action_myKatiFragment_to_reviewFlagment)
         );
 
+        JSHSelectItem allergySelect = view.findViewById(R.id.select_my_allergy);
+        allergySelect.setOnClickListener(
+                v-> Navigation.findNavController(view).navigate(R.id.action_myKatiFragment_to_allergyFragment)
+        );
+
         Button signUp = view.findViewById(R.id.mykati_signUp_button);
         signUp.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), SignUpActivity.class)));
 

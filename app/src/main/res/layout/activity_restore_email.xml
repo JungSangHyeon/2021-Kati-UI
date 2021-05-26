@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:button_image="@drawable/jsh_before"
-        app:title="아이디 찾기"
+        app:title="복구 이메일 변경"
         android:background="@color/white"
         android:elevation="5dp"/>
 
@@ -46,7 +46,7 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/white"
-            android:text="아이디 찾기"
+            android:text="복구 이메일 변경"
             android:layout_marginTop="16dp"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"

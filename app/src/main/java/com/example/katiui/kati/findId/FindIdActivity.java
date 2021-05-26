@@ -1,4 +1,4 @@
-package com.example.katiui.kati.nameEdit;
+package com.example.katiui.kati.findId;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.katiui.R;
 
-public class NameEditActivity extends AppCompatActivity {
+public class FindIdActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_name_edit);
+        setContentView(R.layout.activity_id_find);
     }
 }

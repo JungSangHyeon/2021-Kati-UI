@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KatiUI">
-        <activity android:name=".kati.idFind.IdFindActivity"></activity>
-        <activity android:name=".kati.nameEdit.NameEditActivity" />
-        <activity android:name=".kati.passwordFind.PasswordFindActivity" />
+        <activity android:name=".kati.setRestoreEmail.SetRestoreEmailActivity"></activity>
+        <activity android:name=".kati.findId.FindIdActivity" />
+        <activity android:name=".kati.editName.EditNameActivity" />
+        <activity android:name=".kati.findPassword.FindPasswordActivity" />
         <activity android:name=".kati.login.LoginActivity" />
         <activity android:name=".kati.signOut.SignOutActivity" />
         <activity
-            android:name=".kati.passwordEdit.PasswordEditActivity"
+            android:name=".kati.editPassword.EditPasswordActivity"
             android:label="@string/title_activity_password_edit"
             android:theme="@style/Theme.KatiUI.NoActionBar" />
         <activity

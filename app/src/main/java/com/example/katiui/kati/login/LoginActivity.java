@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.katiui.R;
-import com.example.katiui.kati.passwordFind.PasswordFindActivity;
+import com.example.katiui.kati.findId.FindIdActivity;
+import com.example.katiui.kati.findPassword.FindPasswordActivity;
 import com.example.katiui.kati.signUp.SignUpActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -21,7 +22,8 @@ public class LoginActivity extends AppCompatActivity {
         TextView findPw = this.findViewById(R.id.login_findPW_textView);
         TextView signIn = this.findViewById(R.id.login_signIn_textView);
 
-        findPw.setOnClickListener(v->this.startActivity(new Intent(this, PasswordFindActivity.class)));
+        findPw.setOnClickListener(v->this.startActivity(new Intent(this, FindIdActivity.class)));
+        findId.setOnClickListener(v->this.startActivity(new Intent(this, FindPasswordActivity.class)));
         signIn.setOnClickListener(v->this.startActivity(new Intent(this, SignUpActivity.class)));
     }
 }
