@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity {
         TextView findPw = this.findViewById(R.id.login_findPW_textView);
         TextView signIn = this.findViewById(R.id.login_signIn_textView);
 
-        findPw.setOnClickListener(v->this.startActivity(new Intent(this, FindIdActivity.class)));
-        findId.setOnClickListener(v->this.startActivity(new Intent(this, FindPasswordActivity.class)));
+        findId.setOnClickListener(v->this.startActivity(new Intent(this, FindIdActivity.class)));
+        findPw.setOnClickListener(v->this.startActivity(new Intent(this, FindPasswordActivity.class)));
         signIn.setOnClickListener(v->this.startActivity(new Intent(this, SignUpActivity.class)));
     }
 }

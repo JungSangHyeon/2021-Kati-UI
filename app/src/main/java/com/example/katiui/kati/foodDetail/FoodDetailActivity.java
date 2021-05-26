@@ -26,10 +26,10 @@ public class FoodDetailActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         ViewPager2 viewPager2 = findViewById(R.id.viewPager2_container);
 
-        ViewPagerAdapter fgAdapter = new ViewPagerAdapter();
+        ViewPagerAdapter fgAdapter = new ViewPagerAdapter(this);
         viewPager2.setAdapter(fgAdapter);
 
-        final List<String> tabElement = Arrays.asList("제품","리뷰","기타");
+        final List<String> tabElement = Arrays.asList("제품","리뷰","제조사");
         new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {

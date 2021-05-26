@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
-
-        this.startActivity(new Intent(this, FoodDetailActivity.class));
     }
 
 

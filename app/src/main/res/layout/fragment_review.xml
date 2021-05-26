@@ -9,14 +9,14 @@
 
 
     <androidx.core.widget.NestedScrollView
-        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
             android:layout_height="match_parent">
 
             <include
@@ -25,14 +25,15 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/review_reviewList"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                app:layout_constraintTop_toBottomOf="@+id/summary"
                 tools:itemCount="4"
-                tools:listitem="@layout/item_review_see_at_food_info"/>
+                tools:listitem="@layout/item_review_see_at_food_info"
+                app:layout_constraintTop_toBottomOf="@+id/summary"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
