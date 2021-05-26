@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             switch(item.getItemId()){
                 case R.id.action_home: navController.navigate(R.id.action_global_mainFragment); break;
                 case R.id.action_favorite: navController.navigate(R.id.action_global_favoriteFragment); break;
-                case R.id.action_search: break;
+                case R.id.action_search: navController.navigate(R.id.action_global_searchFragment); break;
                 case R.id.action_find_market: break;
                 case R.id.action_mykati: navController.navigate(R.id.action_global_myKatiFragment); break;
             }

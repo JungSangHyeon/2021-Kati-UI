@@ -45,5 +45,22 @@
         android:id="@+id/favoriteFragment"
         android:name="com.example.katiui.kati.main.favorite.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" /><action android:id="@+id/action_global_myKatiFragment" app:destination="@id/myKatiFragment"/><action android:id="@+id/action_global_favoriteFragment" app:destination="@id/favoriteFragment"/>
+        tools:layout="@layout/fragment_favorite" />
+    <action android:id="@+id/action_global_myKatiFragment" app:destination="@id/myKatiFragment" />
+    <action android:id="@+id/action_global_favoriteFragment" app:destination="@id/favoriteFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.katiui.kati.main.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultFragment"
+            app:destination="@id/searchResultFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_searchFragment" app:destination="@id/searchFragment" />
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.example.katiui.kati.main.search.SearchResultFragment"
+        android:label="SearchResultFragment"
+        tools:layout="@layout/fragment_search_result"/>
 </navigation>

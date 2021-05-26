@@ -37,36 +37,57 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:chipStrokeWidth="1.5dp"
+                app:chipStrokeColor="@color/kati_middle_gray"
+                app:chipBackgroundColor="@color/chip_choice_bg"
                 android:text="새우" />
 
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:chipStrokeWidth="1.5dp"
+                app:chipStrokeColor="@color/kati_middle_gray"
+                app:chipBackgroundColor="@color/chip_choice_bg"
                 android:text="오징어" />
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:chipStrokeWidth="1.5dp"
+                app:chipStrokeColor="@color/kati_middle_gray"
+                app:chipBackgroundColor="@color/chip_choice_bg"
                 android:text="어패류" />
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
+                app:chipStrokeWidth="1.5dp"
+                app:chipStrokeColor="@color/kati_middle_gray"
+                app:chipBackgroundColor="@color/chip_choice_bg"
                 android:layout_height="wrap_content"
                 android:text="소고기" />
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
+                app:chipStrokeWidth="1.5dp"
+                app:chipStrokeColor="@color/kati_middle_gray"
+                app:chipBackgroundColor="@color/chip_choice_bg"
                 android:layout_height="wrap_content"
                 android:text="돼지고기" />
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
+                app:chipStrokeWidth="1.5dp"
+                app:chipStrokeColor="@color/kati_middle_gray"
+                app:chipBackgroundColor="@color/chip_choice_bg"
                 android:layout_height="wrap_content"
                 android:text="대애애두" />
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
+                app:chipStrokeWidth="1.5dp"
+                app:chipStrokeColor="@color/kati_middle_gray"
+                app:chipBackgroundColor="@color/chip_choice_bg"
                 android:layout_height="wrap_content"
                 android:text="밀" />
 
