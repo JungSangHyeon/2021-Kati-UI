@@ -1,11 +1,13 @@
 package com.example.katiui.kati.foodDetail;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.katiui.R;
+import com.example.katiui.kati.review.ReviewActivity;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -29,10 +32,12 @@ public class ReviewFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Log.d("TEST3", "onViewCreated");
         RecyclerView rv = view.findViewById(R.id.review_reviewList);
         rv.setAdapter(new Adapter2());
         rv.setNestedScrollingEnabled(false);
+
+        Button reviewWrite = view.findViewById(R.id.review_writeButton);
+        reviewWrite.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), ReviewActivity.class)));
     }
 
     private class Adapter2 extends RecyclerView.Adapter<ViewHolder>{
