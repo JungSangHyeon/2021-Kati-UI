@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KatiUI">
-        <activity android:name=".kati.foodDetail.FoodDetailActivity"></activity>
+
+        <activity android:name=".kati.foodDetail.FoodDetailActivity" />
         <activity android:name=".kati.review.ReviewActivity" />
         <activity android:name=".kati.setRestoreEmail.SetRestoreEmailActivity" />
         <activity android:name=".kati.findId.FindIdActivity" />
@@ -25,7 +26,8 @@
             android:name=".kati.signUp.SignUpActivity"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/Theme.KatiUI.NoActionBar" />
-        <activity android:name=".kati.main.MainActivity">
+        <activity android:name=".kati.main.MainActivity"></activity>
+        <activity android:name=".kati.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

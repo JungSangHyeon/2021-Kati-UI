@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".kati.foodDetail.ReviewFragment">
+    tools:context=".kati.foodDetail.review.ReviewFragment">
 
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:background="@color/kati_light_gray"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout

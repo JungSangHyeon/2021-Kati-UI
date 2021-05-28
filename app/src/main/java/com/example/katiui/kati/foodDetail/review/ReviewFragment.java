@@ -1,4 +1,4 @@
-package com.example.katiui.kati.foodDetail;
+package com.example.katiui.kati.foodDetail.review;
 
 import android.content.Context;
 import android.content.Intent;

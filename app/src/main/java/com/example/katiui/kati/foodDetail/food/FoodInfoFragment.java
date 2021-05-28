@@ -1,4 +1,4 @@
-package com.example.katiui.kati.foodDetail;
+package com.example.katiui.kati.foodDetail.food;
 
 import android.os.Bundle;
 

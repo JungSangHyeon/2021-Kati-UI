@@ -29,7 +29,7 @@
         android:layout_marginLeft="40dp"
         android:text="1점"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/reviewSummaryAverage"
         app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
     <TextView
@@ -62,7 +62,7 @@
         android:layout_marginLeft="40dp"
         android:text="2점"
         app:layout_constraintBottom_toTopOf="@+id/textView41"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/reviewSummaryAverage"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
     <TextView
@@ -95,7 +95,7 @@
         android:layout_marginLeft="40dp"
         android:text="3점"
         app:layout_constraintBottom_toTopOf="@+id/textView39"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/reviewSummaryAverage"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
@@ -138,11 +138,11 @@
         android:layout_marginLeft="40dp"
         android:text="4점"
         app:layout_constraintBottom_toTopOf="@+id/textView37"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/reviewSummaryAverage"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/reviewSummaryAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="48dp"
@@ -162,9 +162,9 @@
         android:progressTint="@color/kati_orange"
         android:rating="5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView19"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintEnd_toEndOf="@+id/reviewSummaryAverage"
+        app:layout_constraintStart_toStartOf="@+id/reviewSummaryAverage"
+        app:layout_constraintTop_toBottomOf="@+id/reviewSummaryAverage" />
 
 
     <ProgressBar
@@ -187,7 +187,7 @@
         android:layout_marginLeft="40dp"
         android:text="5점"
         app:layout_constraintBottom_toTopOf="@+id/textView34"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/reviewSummaryAverage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

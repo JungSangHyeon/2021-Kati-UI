@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/kati_light_gray"
-    tools:context=".kati.foodDetail.ExtraInfoFragment">
+    tools:context=".kati.foodDetail.extra.ExtraInfoFragment">
 
 
     <com.example.katiui.jshCrossDomain.JSHInfoItem

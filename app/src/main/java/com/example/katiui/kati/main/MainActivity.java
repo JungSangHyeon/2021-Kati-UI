@@ -9,6 +9,7 @@ import androidx.navigation.Navigation;
 
 import com.example.katiui.R;
 import com.example.katiui.kati.foodDetail.FoodDetailActivity;
+import com.example.katiui.kati.splash.SplashActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
