@@ -6,4 +6,4 @@
 ㅎㅎㅎㅎㅎ PLIM 화이팅!
 
 
-* 요기요의 UI를 그대로 따라함.
+![asd](https://user-images.githubusercontent.com/67571491/120617325-f59f6500-c494-11eb-94f9-8a9796652e72.jpg)
